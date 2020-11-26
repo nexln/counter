@@ -26,6 +26,7 @@ function App() {
 
     const [max, setMax] = useState(5);
     const [min, setMin] = useState(0);
+    const [error, setError] = useState(false);
     let [counter, setData] = useState<Array<CountType>>([{
         counter: "Enter values and press set",
         incButton: true,
@@ -33,7 +34,7 @@ function App() {
         clasNam: 'Counter'
     }]);
 
-    const [error, setError] = useState(false);
+
 
     let i = Number(counter[0].counter) + 1;
 
@@ -69,7 +70,7 @@ function App() {
     function reset() {
         const newCount: CountType = {
             counter: "Enter values and press set",
-            incButton: false,
+            incButton: true,
             resetButton: true,
             clasNam: 'Counter'
         };
@@ -99,9 +100,9 @@ function App() {
             <div className='handler1'>
                 <div className='labelHandler'>
                     <LabelInputHandler clasDiv={'Label1'} labelTitle={'MaxValue'} value={max}
-                                       onChange={changeMaxValue}/>
+                                       onChange={changeMaxValue} error={error}/>
                     <LabelInputHandler clasDiv={'Label2'} labelTitle={'StartValue'} value={min}
-                                       onChange={changeMinValue}/>
+                                       onChange={changeMinValue} error={error}/>
                 </div>
                 <ButtonsHandler clasDiv={'ButtonSetHandler'} title={'set'} onClick={setMinMaxCounter} dis={false}/>
             </div>

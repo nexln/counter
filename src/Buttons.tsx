@@ -1,5 +1,6 @@
 import React, {MouseEvent} from 'react';
 import './App.css';
+import {Button} from "@material-ui/core";
 
 type PropsType = {
     title: string
@@ -11,7 +12,7 @@ type PropsType = {
 export function ButtonsHandler(props: PropsType) {
     return (
         <div className={props.clasDiv}>
-            <button className={'btn'} disabled={props.dis} onClick={props.onClick}>{props.title}</button>
+            <Button className={'btn'} size={'large'} variant={'outlined'} color={'primary'} disabled={props.dis} onClick={props.onClick}>{props.title}</Button>
         </div>
     );
 }

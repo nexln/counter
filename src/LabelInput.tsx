@@ -1,11 +1,15 @@
 import React, {ChangeEvent} from 'react';
 import './App.css';
+import {TextField} from "@material-ui/core";
+
+
 
 type PropsType = {
     clasDiv: string
     labelTitle: string
     value: number
     onChange: (value: number) => void
+    error: boolean
 }
 
 export function LabelInputHandler(props: PropsType) {
@@ -15,7 +19,14 @@ export function LabelInputHandler(props: PropsType) {
     };
     return (
         <div className={props.clasDiv}>
-            <label htmlFor="">{props.labelTitle}<input type="number" value={props.value} onChange={handleOnChange} step={'1'}/></label>
+            <TextField InputLabelProps={{shrink: true,}}
+                       variant="filled"
+                       type="number"
+                       value={props.value}
+                       onChange={handleOnChange}
+                       label={props.labelTitle}
+                       error={props.error}
+                       />
         </div>
     );
 }

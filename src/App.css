@@ -1,6 +1,7 @@
+html {
+  background-color: #282c34;
+}
 .App {
-  width: 100%;
-  height: 100%;
   text-align: center;
   background-color: #282c34;
   display: grid;
@@ -34,7 +35,7 @@
   grid-area: counter;
   text-align: center;
   font-size: 50px;
-  color: #c4b5ff;
+  color: #343f75;
   border: 5px solid #186081;
   padding-top: 100px;
 }
@@ -42,7 +43,7 @@
   grid-area: labelHandler;
   text-align: center;
   font-size: 50px;
-  color: #c4b5ff;
+  color: #343f75;
   border: 5px solid #186081;
   padding-top: 100px;
 }
@@ -51,27 +52,24 @@
   grid-area: button1Handler;
   text-align: center;
   font-size: 18px;
-  color: #6b13ff;
   border: 5px solid #186081;
-  padding-top: 20%;
+  padding: 80px;
 }
 
 .ButtonSetHandler {
   grid-area: buttonSetHandler;
   text-align: center;
   font-size: 18px;
-  color: #6b13ff;
   border: 5px solid #186081;
-  padding-top: 20%;
+  padding: 10%;
 }
 
 .Button2Handler {
   grid-area: button2Handler;
   text-align: center;
   font-size: 18px;
-  color: #6b13ff;
   border: 5px solid #186081;
-  padding-top: 20%;
+  padding: 80px;
 }
 
 .RedCounter {
@@ -83,43 +81,45 @@
   padding-top: 100px;
 }
 
-.btn {
-  font-family: Impact, fantasy;
-  font-size: 20px;
-  background-color: #282c34;
-  border: 2px solid #186081;
-  transition-duration: 0.4s;
-  color: rgb(24,96,129);
-}
+/*.btn {*/
+/*  font-family: Impact, fantasy;*/
+/*  font-size: 20px;*/
+/*  background-color: #282c34;*/
+/*  border: 2px solid #186081;*/
+/*  transition-duration: 0.4s;*/
+/*  color: rgb(24,96,129);*/
+/*}*/
 
-.btn:hover {
-  background-color: #186081;
-  color: white;
-}
+/*.btn:hover {*/
+/*  background-color: #186081;*/
+/*  color: white;*/
+/*}*/
 
 .Label1 input {
 margin: 10px;
   text-align: center;
   font-size: 40px;
+  color: #343f75;
 }
 
-.RedLabel1 input {
-  margin: 10px;
-  text-align: center;
-  font-size: 40px;
-  border: 5px solid #810c00;
-  background-color: #c4b5ff;
-}
+/*.RedLabel1 input {*/
+/*  margin: 10px;*/
+/*  text-align: center;*/
+/*  font-size: 40px;*/
+/*  border: 5px solid #810c00;*/
+/*  background-color: #c4b5ff;*/
+/*}*/
 .Label2 input {
 margin: 10px;
   text-align: center;
   font-size: 40px;
+  color: #343f75;
 }
 
-.RedLabel2 input {
-  margin: 10px;
-  text-align: center;
-  font-size: 40px;
-  border: 5px solid #810c00;
-  background-color: #c4b5ff;
-}
+/*.RedLabel2 input {*/
+/*  margin: 10px;*/
+/*  text-align: center;*/
+/*  font-size: 40px;*/
+/*  border: 5px solid #810c00;*/
+/*  background-color: #c4b5ff;*/
+/*}*/
